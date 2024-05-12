@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'login.css') }}">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="img-box">
+      <img src="{{ url_for('static', filename = 'login.png') }}" alt="">
+    </div>
+    <div class="content-box">
+      <div class="content">
+        <h2>Login</h2>
+        <form action="">
+          <div class="input-box">
+            <label for="inputUserName">Username</label>
+            <input type="text" placeholder="Enter Username..." id="inputUserName">
+          </div>
+
+          <div class="input-box">
+            <label for="inputPass">Password</label>
+            <input type="password" placeholder="Enter Password..." id="inputPass">
+          </div>
+
+          <div class="input-box">
+            <label for="chBox"><input type="checkbox" id="chBox">Remember Password</label>
+          </div>
+
+          <div class="input-box">
+            <input type="submit" value="Login">
+          </div>
+
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

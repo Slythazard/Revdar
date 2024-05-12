@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:ital@0;1&display=swap');
+
+
+/* universal section  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; */
+}
+
+/* navbar section */
+.navbar {
+    font-family: "Roboto Mono", monospace;
+    height: 10vh;
+    justify-content: space-between;
+    margin: 0px 2.5rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    padding-left: 30px;
+}
+
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar button {
+    padding: 12px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    transition: 0.2s ease-in;
+}
+
+.navbar button a {
+    text-decoration: none;
+    color: rgb(153, 150, 150);
+    font-weight: 700;
+    transition: 0.2s ease-in;
+}
+
+.navbar a:hover {
+    color: rgb(231, 210, 68);
+}
+
+.navbar button:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+/* hero section */
+
+.hero-section {
+    height: 800px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-section h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.hero-section img {
+    /* width: 100%; */
+    height: 500px;
+}
+
+.hero-text {
+    order: 1;
+    width: 40%;
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.hero-text button {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    gap: 12px;
+    margin-top: 20px;
+    transition: 0.4 ease-in;
+    border: 1px solid black;
+    font-weight: 700;
+}
+
+.hero-text button:hover {
+    color: black;
+    background-color: white;
+}
+
+/* brands collaboration section */
+
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.brands img {
+    width: 150px;
+}
+
+/* services section  */
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 40px;
+}
+
+.services span {
+    font-size: 40px;
+    font-weight: 6200;
+    background-color: rgba(91, 255, 59, 0.774);
+    color: rgb(0, 0, 0);
+    padding: 0px 6px;
+}
+
+.services p {
+    width: 40%;
+    margin-left: 40px;
+}
+
+
+/* box section */
+
+.box-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 30px;
+    border-radius: 25px;
+    height: 225px;
+    width: 30vw;
+    border: 2px solid black;
+    box-shadow: 0px 10px 7px black;
+    margin-bottom: 60px;
+}
+
+.box button {
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    margin-top: 100px;
+    border-radius: 12px;
+    padding: 2px 12px;
+}
+
+.box1 button {
+    border: 1px solid black;
+}
+
+.box2 button {
+    color: white;
+    border: 1px solid white;
+}
+
+
+.box2 {
+    background-color: black;
+}
+
+.box span {
+    font-weight: 700;
+    font-size: 1.1rem
+}
+.box2 span {
+    background-color: white;
+    padding: 0px 6px;
+}
+
+.box1 span {
+    background-color: rgba(91, 255, 59, 0.774);
+    padding: 0px 6px;
+}
+
+.content {
+    gap: 40px;
+}
