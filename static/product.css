@@ -1,0 +1,39 @@
+#report-frame {
+    width: 100%;
+    border: none;
+    height: 400px;  /* Temporary height for initial rendering */
+  }
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#username{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 100px;
+    border: 1px solid grey;
+    box-shadow: none;
+
+}
+
+#file{
+    width: 20%;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1{
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: Bold;
+  display: bold;
+  margin: auto 0 auto 0;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='resources.css') }}">
+    <title>Products</title>
+</head>
+<body>
+    <form action="/Products" method="get,post">
+        <label for="st">Select Store</label>
+        <select name="st" id="store" >
+            {% for st in Stores %}
+                <option value="{{ st }}">{{ st }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="CPI">Enter CPI</label>
+        <input type="number" name="CPI">
+
+        <label for="week">Enter Desired week no.</label>
+        <input type="number" name="week">
+
+        <label for="mt">Enter Month</label>
+        <select name="mt" id="month">
+            {% for mt in month %}
+                <option value="{{ mt }}">{{ mt }}</option>
+            {% endfor %}
+        </select>
+
+        <input type="submit" value="submit" onclick="send_data()">    
+    </form>
+    <br>
+    <div class="row">
+        <d class="col12" style="text-align: center;">
+            <h3><span id="prediction"></span></h3>
+        </d>
+    </div>
+
+    <script>
+        function form_handler(event)
+        {
+            event.preventDefault();
+        }
+        function send_data()
+        {
+            document.querySelector('form').addEventListener('submit', form_handler);
+            var storeValue = parseInt(document.getElementById('store').value);
+            var fd = new FormData(document.querySelector('form'));
+            fd.append('st', storeValue);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST','/predict', true);
+            document.getElementById("prediction").innerHTML="wait! predicting sales...";
+
+            xhr.onreadystatechange= function()
+            {
+              if(xhr.readyState == XMLHttpRequest.DONE)
+                {
+                    document.getElementById("prediction").innerHTML='Prediction '+xhr.responseText;
+                }
+            }
+
+            xhr.onload=function(){};
+            xhr.send(fd)
+        }
+    </script>
+</body>
+</html>
