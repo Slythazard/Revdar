@@ -1,13 +1,15 @@
-from flask import Flask, url_for, render_template,request
-from werkzeug.utils import secure_filename
-import sklearn
-from flask_sqlalchemy import SQLAlchemy
-import numpy
-import sweetviz as sv
-import ydata_profiling as ydp
-import pandas as pd
 import os
 import pickle
+
+
+import numpy as np
+import pandas as pd
+import sklearn
+import sweetviz as sv
+import ydata_profiling as ydp
+from flask import Flask, url_for, render_template, request
+from flask_sqlalchemy import SQLAlchemy
+from werkzeug.utils import secure_filename
 
 model = pickle.load(open("RegModel.pkl", 'rb'))
 app = Flask(__name__)
@@ -73,6 +75,4 @@ def prediction():
 
     prediction = model.predict(pd.DataFrame([[Store,CPI,week,month]], columns=['Store', 'CPI', 'week', 'month']))
 
-    return str(prediction[0])
-
-app.run(debug = True)
+    return str(prediction[0])   
