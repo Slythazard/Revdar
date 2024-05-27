@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ebeef1;
+
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+  -10px -10px 10px -1px rgba(2255,255,255,0.7);
+}
+
+.container .img-box{
+  height: 100%;
+  width: 50%;
+  /* background-color: rgb(233, 62,91); */
+}
+
+.container .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .content-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.container .content-box .content{
+  width: 65%;
+}
+
+.container .content-box .content h2{
+  color: rgba(0, 0,0,0.8);
+  border-bottom: 3px solid rgb(233, 62,91);
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input-box label{
+  display: block;
+  color: rgba(0, 0,0,0.7);
+  letter-spacing: 1px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 60px;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  box-shadow: 5px 5px 5px -1px rgba(10,99,169,0.16),
+  -7px -7px 5px -1px rgba(2255,255,255,0.7);
+}
+
+.input-box input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.input-box input[type="submit"]{
+  background-color: rgb(233, 62,91);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media i{
+  padding: 15px;
+  margin: 0 7px;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-top: 20px;
+  color: rgb(233, 62,91);
+  cursor: pointer;
+  box-shadow: 4px 4px 5px -1px rgba(10,99,169,0.16),
+  -10px -10px 10px -1px rgba(2255,255,255,0.7);
+}
+
+.social-media i:hover{
+  background-color: rgb(233, 62,91);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container{
+    margin: 40px;
+  }
+  .container .img-box{
+    display: none;
+  }
+  .container .content-box{
+    width: 100%;
+  }
+  .container .content-box .content{
+    width: 75%;
+  }
+}
+
+@media (max-width: 962px) {
+  .container{
+    margin: 40px;
+  }
+ 
+  .container .content-box{
+    width: 100%;
+  }
+  .container .content-box .content{
+    width: 75%;
+  }
+}
