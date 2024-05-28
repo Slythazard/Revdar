@@ -75,7 +75,4 @@ def prediction():
 
     prediction = model.predict(pd.DataFrame([[Store,CPI,week,month]], columns=['Store', 'CPI', 'week', 'month']))
 
-    return str(prediction[0])   
-
-if __name__ == "__main__":
-    app.run(debug=True)
+    return str(prediction[0])
