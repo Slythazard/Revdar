@@ -1,0 +1,43 @@
+# Ignore virtual environments
+/venv/
+
+# Ignore Python bytecode files
+/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore system-specific files
+/.DS_Store
+
+# Ignore IDE/editor-specific files
+/.vscode/
+/.idea/
+
+# Ignore documentation
+/docs/
+*.md
+/LICENSE
+
+# Ignore build artifacts
+/dist/
+/build/
+/.next/
+
+# Ignore test and development files
+/tests/
+*.test.js
+*.spec.js
+/jest.config.js
+
+# Ignore Git and version control files
+/.git/
+/.gitignore
+/.gitattributes
+
+# Ignore local deployment scripts
+/deploy.sh
+/compress_images.sh
+
+# Ignore Jupyter notebook checkpoints
+/.ipynb_checkpoints/
