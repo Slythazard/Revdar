@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 UPLOAD_FOLDER = 'C:\\Users\\shres\\Documents\\Flask-tutorial\\static'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['MAX_CONTENT_LENGTH'] = 250 * 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 220 * 1024 * 1024
 
 ALLOWED_EXTENSIONS = set(['csv', 'xlsx', 'jpg', 'jpeg', 'gif'])
 
